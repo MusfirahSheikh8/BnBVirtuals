@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Contact Us – BnB Virtuals</title>
+  <meta name="description"
+    content="Get in touch with BnB Virtuals. Book a free discovery call or send us a message — we'd love to help you scale your short-term rental business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .faq-item {
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: var(--white);
+      border: none;
+      padding: 20px 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background .2s;
+    }
+
+    .faq-question:hover {
+      background: var(--light);
+    }
+
+    .faq-question .arrow {
+      font-size: 1.2rem;
+      transition: transform .3s;
+      flex-shrink: 0;
+    }
+
+    .faq-question.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease;
+      background: var(--light);
+    }
+
+    .faq-answer p {
+      padding: 0 24px 20px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .contact-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(60, 179, 113, 0.1);
+      border: 1px solid rgba(60, 179, 113, 0.3);
+      color: var(--primary);
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+      width: fit-content;
+    }
+
+    .response-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #e8f5e9;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-top: 24px;
+      font-size: 0.88rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .response-bar .dot {
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.6;
+        transform: scale(1.3);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">
+      
+      <img src="logo.png" alt="BnB Virtuals" class="nav-logo-img"/>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-badge">📞 Let's Talk</div>
+    <h1>Get In Touch</h1>
+    <p>Ready to build a hands-free BnB business? Drop us a message and we'll get back to you within one business day.
+    </p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact Info -->
+      <div>
+        <div class="contact-badge">🟢 We're currently accepting new clients</div>
+        <div class="section-tag">Contact Details</div>
+        <h2 class="section-heading">We'd Love to Hear From You</h2>
+        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:36px;line-height:1.7;">Whether you have one
+          property or a full portfolio, BnB Virtuals can help. Reach out via any of the channels below, or use the form
+          to send us a message directly.</p>
+
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+
+          <div class="contact-detail">
+            <div class="contact-icon">📧</div>
+            <div class="contact-detail-body">
+              <strong>Email Us</strong>
+              <a href="mailto:info@bnbvirtuals.com">info@bnbvirtuals.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">🌐</div>
+            <div class="contact-detail-body">
+              <strong>Website</strong>
+              <a href="https://bnbvirtuals.com" target="_blank">www.bnbvirtuals.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">📱</div>
+            <div class="contact-detail-body">
+              <strong>WhatsApp / Direct</strong>
+              <a href="https://wa.me/447700000000">+44 7700 000 000</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-detail-body">
+              <strong>Office Hours</strong>
+              <p>Monday – Friday, 9am – 6pm (GMT)</p>
+            </div>
+          </div>
+
+          <div class="contact-detail" style="margin-bottom:0;">
+            <div class="contact-icon">💬</div>
+            <div class="contact-detail-body">
+              <strong>Discovery Call</strong>
+              <p>Free 30-min call — book via the form ➜</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="response-bar">
+          <div class="dot"></div>
+          We typically respond within <strong style="margin-left:4px;">1 business day</strong>
+        </div>
+
+        <!-- Social Links -->
+        <div style="margin-top:36px;">
+          <p
+            style="font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:14px;">
+            Follow Us</p>
+          <div style="display:flex;gap:12px;">
+            <a href="#"
+              style="display:flex;align-items:center;gap:8px;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:0.88rem;font-weight:600;color:var(--primary);transition:background .2s;"
+              onmouseover="this.style.background='#d4f0de'" onmouseout="this.style.background='var(--light)'">
+              📘 Facebook
+            </a>
+            <a href="#"
+              style="display:flex;align-items:center;gap:8px;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:0.88rem;font-weight:600;color:var(--primary);transition:background .2s;"
+              onmouseover="this.style.background='#d4f0de'" onmouseout="this.style.background='var(--light)'">
+              📸 Instagram
+            </a>
+            <a href="#"
+              style="display:flex;align-items:center;gap:8px;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:0.88rem;font-weight:600;color:var(--primary);transition:background .2s;"
+              onmouseover="this.style.background='#d4f0de'" onmouseout="this.style.background='var(--light)'">
+              💼 LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="contact-form-wrap">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="e.g. Sarah" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="e.g. Ahmed" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44 7700 000 000" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="properties">Number of Properties</label>
+              <select id="properties" name="properties">
+                <option value="">Select…</option>
+                <option value="1">1 property</option>
+                <option value="2-3">2–3 properties</option>
+                <option value="4-8">4–8 properties</option>
+                <option value="9+">9+ properties</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="enquiryType">Enquiry Type</label>
+              <select id="enquiryType" name="enquiryType">
+                <option value="">Select…</option>
+                <option value="discovery">Book a Discovery Call</option>
+                <option value="services">Service Enquiry</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message"
+              placeholder="Tell us about your properties and what you're looking for…" required></textarea>
+          </div>
+
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:12px;margin-bottom:28px;">
+            <input type="checkbox" id="consent" name="consent"
+              style="width:18px;height:18px;margin-top:2px;accent-color:var(--accent);flex-shrink:0;" required />
+            <label for="consent"
+              style="font-size:0.82rem;color:var(--muted);text-transform:none;letter-spacing:0;font-weight:400;">I agree
+              to BnB Virtuals storing my information to respond to this enquiry. We never share your data with third
+              parties.</label>
+          </div>
+
+          <button type="submit" class="form-submit">🚀 Send Message</button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! We'll be in touch within one business day.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="services-bg">
+    <div style="max-width:780px;margin:0 auto;">
+      <div class="section-tag">FAQs</div>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+      <p class="section-sub">Quick answers to the most common questions we get.</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            How quickly can a VA start managing my properties?
+            <span class="arrow">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Most of our clients are fully onboarded and live within 5–7 business days of their discovery call. We
+              brief your VA thoroughly before handing over so there's no learning gap from the start.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Will my VA work exclusively on my properties?
+            <span class="arrow">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Your VA is dedicated primarily to your portfolio. Depending on your plan and property volume, they may
+              support one or two other clients alongside you — but your properties always receive the priority response
+              times and attention outlined in your service agreement.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What happens if my VA is sick or unavailable?
+            <span class="arrow">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Every client has a backup VA who is briefed on your properties. If your primary VA is unavailable for any
+              reason, your backup steps in seamlessly — guests never notice any disruption.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need to provide login access to my accounts?
+            <span class="arrow">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — we use your existing platform accounts (Airbnb, Booking.com, etc.) securely. We use sub-account
+              permissions or co-host access where possible, meaning you always retain ownership and we never hold master
+              credentials insecurely.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Is there a minimum contract length?
+            <span class="arrow">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>We operate on a rolling monthly basis. We're confident in our results, so we don't lock you into long
+              contracts. You can cancel or change plans with 30 days' written notice.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Which platforms do you work with?
+            <span class="arrow">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>We work across Airbnb, Booking.com, Vrbo, Expedia, direct booking websites, and most major channel
+              managers. If you use a specific PMS or tool, let us know on your discovery call and we'll confirm
+              compatibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:#fff;">
+          
+          <img src="logo.png" alt="BnB Virtuals" class="nav-logo-img"/>
+        </a>
+        <p>Fully trained Virtual Assistants specializing in serviced accommodations and BnB operations.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Guest Messaging</a></li>
+          <li><a href="services.html">Booking Management</a></li>
+          <li><a href="services.html">Pricing Optimisation</a></li>
+          <li><a href="services.html">Review Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <ul>
+          <li><a href="mailto:info@bnbvirtuals.com">info@bnbvirtuals.com</a></li>
+          <li><a href="https://wa.me/447700000000">WhatsApp Us</a></li>
+          <li><a href="https://bnbvirtuals.com" target="_blank">bnbvirtuals.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BnB Virtuals. All rights reserved.</span>
+      <div class="social-links">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="#" title="LinkedIn">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+  <script src="shared.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = btn.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-question').forEach(b => {
+          b.classList.remove('open');
+          b.nextElementSibling.style.maxHeight = null;
+        });
+        // Open clicked (if wasn't open)
+        if (!isOpen) {
+          btn.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
